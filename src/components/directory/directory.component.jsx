@@ -45,7 +45,7 @@ class Directory extends Component {
         {this.state.sections.map(section => (
           <MenuItem
             key={section.id}
-            title={section.title}
+            title={section.title.toUpperCase()}
             imageUrl={section.imageUrl}
             size={section.size}
           />
