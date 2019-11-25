@@ -23,13 +23,13 @@ class Directory extends Component {
           id: 3,
         },
         {
-          title: 'womens',
+          title: 'women',
           imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
           size: 'large',
           id: 4,
         },
         {
-          title: 'mens',
+          title: 'men',
           imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
           size: 'large',
           id: 5,
@@ -39,13 +39,12 @@ class Directory extends Component {
   }
 
   render() {
-    //const { sections } = this.state;
     return (
       <div className="directory-menu">
         {this.state.sections.map(section => (
           <MenuItem
             key={section.id}
-            title={section.title.toUpperCase()}
+            title={section.title}
             imageUrl={section.imageUrl}
             size={section.size}
           />
