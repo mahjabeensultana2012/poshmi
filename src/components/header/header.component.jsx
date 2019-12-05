@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as Logo } from '../../assets/crown.svg';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 //import Logo from '../../assets/logo.jpg';
 import './header.styles.scss';
 
