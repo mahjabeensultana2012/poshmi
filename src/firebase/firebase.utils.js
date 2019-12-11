@@ -42,6 +42,7 @@ export const createUserProfilrDocument = async (userAuth, additionalData) => {
       console.log('error creating user:', error.message);
     }
   }
+  return userRef;
 };
 
 const provider = new firebase.auth.GoogleAuthProvider();
