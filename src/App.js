@@ -31,10 +31,10 @@ class App extends React.Component {
                 id: snapShot.id,
                 ...snapShot.data(),
               },
-            },
-            () => {
-              console.log(this.state);
             }
+            // () => {
+            //   console.log(this.state);
+            // }
           );
         });
       }
@@ -58,6 +58,7 @@ class App extends React.Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
           <Route path="/signin" component={SiignInAndSignUpPage} />
+          <Route path="/signup" component={SiignInAndSignUpPage} />
         </Switch>
       </div>
     );
