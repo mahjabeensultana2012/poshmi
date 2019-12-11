@@ -1,14 +1,14 @@
 import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
-import { auth, createUserProfilrDocument } from '../../firebase/firebase.utils';
+import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 import './sign-up.styles.scss';
 
 class SignUp extends React.Component {
   constructor() {
     super();
     this.state = {
-      dispalyName: '',
+      displayName: '',
       email: '',
       password: '',
       confirmPassword: '',
@@ -18,7 +18,7 @@ class SignUp extends React.Component {
   handleSubmit = async event => {
     event.preventDefault();
 
-    const { dispalyName, email, password, confirmPassword } = this.state;
+    const { displayName, email, password, confirmPassword } = this.state;
     if (password !== confirmPassword) {
       alert("password doesn't match");
       return;
@@ -28,7 +28,7 @@ class SignUp extends React.Component {
         email,
         password
       );
-      await createUserProfilrDocument(user, { dispalyName });
+      await createUserProfileDocument(user, { displayName });
 
       this.setState({
         displayName: '',
@@ -40,13 +40,15 @@ class SignUp extends React.Component {
       console.log(error);
     }
   };
+
   handleChange = event => {
     const { name, value } = event.target;
-    this.setState = { [name]: value };
+
+    this.setState({ [name]: value });
   };
 
   render() {
-    const { dispalyName, email, password, confirmPassword } = this.state;
+    const { displayName, email, password, confirmPassword } = this.state;
     return (
       <div className="sign-up">
         <h2 className="title">Don't have an account?</h2>
@@ -55,11 +57,12 @@ class SignUp extends React.Component {
           <FormInput
             type="text"
             name="displayName"
-            value={dispalyName}
+            value={displayName}
             onChange={this.handleChange}
             label="Display Name"
             required
           />
+
           <FormInput
             type="email"
             name="email"
