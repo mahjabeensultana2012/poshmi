@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/poshmi/static/css/main.4946bfed.chunk.css",
+    "main.js": "/poshmi/static/js/main.dea75509.chunk.js",
+    "main.js.map": "/poshmi/static/js/main.dea75509.chunk.js.map",
+    "runtime-main.js": "/poshmi/static/js/runtime-main.6be218a3.js",
+    "runtime-main.js.map": "/poshmi/static/js/runtime-main.6be218a3.js.map",
+    "static/js/2.3966757d.chunk.js": "/poshmi/static/js/2.3966757d.chunk.js",
+    "static/js/2.3966757d.chunk.js.map": "/poshmi/static/js/2.3966757d.chunk.js.map",
+    "index.html": "/poshmi/index.html",
+    "precache-manifest.80a25c445638fda4ca97d375393f5d31.js": "/poshmi/precache-manifest.80a25c445638fda4ca97d375393f5d31.js",
+    "service-worker.js": "/poshmi/service-worker.js",
+    "static/css/main.4946bfed.chunk.css.map": "/poshmi/static/css/main.4946bfed.chunk.css.map",
+    "static/js/2.3966757d.chunk.js.LICENSE": "/poshmi/static/js/2.3966757d.chunk.js.LICENSE",
+    "static/media/logo.2e95356a.svg": "/poshmi/static/media/logo.2e95356a.svg",
+    "static/media/shopping-bag.30f07071.svg": "/poshmi/static/media/shopping-bag.30f07071.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6be218a3.js",
+    "static/js/2.3966757d.chunk.js",
+    "static/css/main.4946bfed.chunk.css",
+    "static/js/main.dea75509.chunk.js"
+  ]
+}
