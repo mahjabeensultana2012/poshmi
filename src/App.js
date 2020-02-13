@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 import './App.css';
 
-import HomePage from './pages/homepage/homepage.component';
+import HomePage from './pages/homepage/HomePage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
 import CheckoutPage from './pages/checkout/checkout.component';
